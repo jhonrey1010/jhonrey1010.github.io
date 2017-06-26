@@ -83,47 +83,46 @@ body {font-family: Verdana,sans-serif;}
 @media screen and (max-width: 290px) {
     .weekdays li, .days li {width: 12.2%;}
 }
-.style3 {
-	color: #00FF00;
-	font-weight: bold;
-	font-size: large;
-}
+.style4 {font-size: xx-large}
+.style5 {font-size: xx-large; font-weight: bold; }
 </style>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 1, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "STARTED";
+  }
+}, 1000);
+</script>
 </head>
 <body>
-<ul class="days">  
-  <li><img src="AUG_A3_Samurai.png" width="100%"></li>
-  <li><img src="http://dl.garenanow.com/games/pbph/pbphweb/webupdate/website/PB%20Skinned%20Weapons/Samurai/AUG_A3_Samurai.png" width="100%"></li>
-  <li><img src="http://dl.garenanow.com/games/pbph/pbphweb/webupdate/website/PB%20Skinned%20Weapons/Samurai/AUG_A3_Samurai.png" width="100%"></li>
-  <li><img src="http://dl.garenanow.com/games/pbph/pbphweb/webupdate/website/PB%20Skinned%20Weapons/Samurai/AUG_A3_Samurai.png" width="100%"></li>
-  <li><img src="http://dl.garenanow.com/games/pbph/pbphweb/webupdate/website/PB%20Skinned%20Weapons/Samurai/AUG_A3_Samurai.png" width="100%"></li>
-  <li><img src="http://dl.garenanow.com/games/pbph/pbphweb/webupdate/website/PB%20Skinned%20Weapons/Samurai/AUG_A3_Samurai.png" width="100%"></li>
-  <li><img src="AUG_A3_Samurai.png" width="100%"><span class="style3">ACTIVE</span></li>
-  <li>8</li>
-  <li>9</li>
-  <li>10</li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
-
+  <p align="center" class="style4"><strong>TIME LEFT TO START</strong></p>
+  <p align="center" class="style4" id="demo"></p>
+  <p align="center" class="style5">PRIZE:</p>
+  <p align="center" class="style5">3 WINNERS OF FULL CODE</p>
+  <p align="center" class="style5">&quot;COMBAT MACHETE&quot;</p>
+  <p align="center" class="style5"><img src="70.png"></p>
 </body>
 </html>
