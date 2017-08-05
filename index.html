@@ -3,6 +3,13 @@
 <head>
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="dropdown.js"></script>
+    <script>
+         function AddImage(){
+         	var pathImg = $("#mySelect option:selected").val();
+         	var htmImg = "<img src='"+ pathImg +"'>";
+         	$("#destiny").html(htmImg);
+         }
+      </script>
     <style>
         .chatbox {
             position: fixed;
