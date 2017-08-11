@@ -1,11 +1,81 @@
 <head>
+<style type"text/css">
+
+
+
+
+
+
+
+.caption-style-1{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		
+	}
+	.caption-style-1 li{
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+	.caption-style-1 li:hover .caption{
+		opacity: 1;
+	}
+	.caption-style-1 img{
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+	.caption-style-1 .caption{
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+	}
+	.caption-style-1 .blur{
+		background-color: rgba(0,0,0,0.65);
+		height: 300px;
+		width: 400px;
+		z-index: 5;
+		position: absolute;
+	}
+	.caption-style-1 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.caption-style-1 .caption-text{
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		text-align: center;
+		top:100px;
+	}
 </head>
 <body>
 <div align="center">
 <div class="container">
   <div id="buttons"></div>
   <div id="gallery">
-    <a href="http://www.ramleague.net/"><img data-tags="AUG A3" data-tags="1 DAY CODES" src="http://i.imgur.com/glW8bcg.png" width="25%" align="center"></a>
+<ul class="caption-style-1">
+			<li>
+				<img src="img/chaps_1x.jpg" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<h1>Amazing Caption</h1>
+						<p>Whatever It Is - Always Awesome</p>
+					</div>
+				</div>
+			</li>
+    <a href="http://www.ramleague.net/"><img data-tags="AUG A3" src="http://i.imgur.com/glW8bcg.png" width="25%" align="center"></a>
       <a href="http://www.youtube.com/"><img data-tags="Kriss S.V." src="" width="25%" align="center"></a>
 <a href="http://www.youtube.com/"><img data-tags="Kriss S.V." src="" width="25%" align="center"></a>
 <a href="http://www.youtube.com/"><img data-tags="Kriss S.V." src="" width="25%" align="center"></a>
