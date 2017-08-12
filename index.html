@@ -1,63 +1,31 @@
 <head>
 <style type"text/css">
-
-
-
-
-
-
-
-.caption-style-1{
-		list-style-type: none;
-		margin: 0px;
-		padding: 0px;
-		
-	}
-	.caption-style-1 li{
-		float: left;
-		padding: 0px;
-		position: relative;
-		overflow: hidden;
-	}
-	.caption-style-1 li:hover .caption{
-		opacity: 1;
-	}
-	.caption-style-1 img{
-		margin: 0px;
-		padding: 0px;
-		float: left;
-		z-index: 4;
-	}
-	.caption-style-1 .caption{
-		cursor: pointer;
-		position: absolute;
-		opacity: 0;
-		-webkit-transition:all 0.45s ease-in-out;
-		-moz-transition:all 0.45s ease-in-out;
-		-o-transition:all 0.45s ease-in-out;
-		-ms-transition:all 0.45s ease-in-out;
-		transition:all 0.45s ease-in-out;
-	}
-	.caption-style-1 .blur{
-		background-color: rgba(0,0,0,0.65);
-		height: 300px;
-		width: 400px;
-		z-index: 5;
-		position: absolute;
-	}
-	.caption-style-1 .caption-text h1{
-		text-transform: uppercase;
-		font-size: 24px;
-	}
-	.caption-style-1 .caption-text{
-		z-index: 10;
-		color: #fff;
-		position: absolute;
-		width: 400px;
-		height: 300px;
-		text-align: center;
-		top:100px;
-	}
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.white_content {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
 </style>
 </head>
 <body>
@@ -65,22 +33,10 @@
 <div class="container">
   <div id="buttons"></div>
   <div id="gallery">
-<img data-tags="AUG A3" src="http://i.imgur.com/glW8bcg.png" width="25%" align="center">
-	<div class="caption">
-		<div class="blur"></div>
-			<div class="caption-text">
-				<h1>Amazing Caption</h1>
-				<p>Whatever It Is - Always Awesome</p>
-			</div>
-		</div>
-<img data-tags="AUG A3" src="http://i.imgur.com/glW8bcg.png" width="25%" align="center">
-	<div class="caption">
-		<div class="blur"></div>
-			<div class="caption-text">
-				<h1>Amazing Caption</h1>
-				<p>Whatever It Is - Always Awesome</p>
-			</div>
-		</div>
+<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img data-tags="AUG A3" src="http://i.imgur.com/glW8bcg.png" width="25%" align="center"></a>
+<div id="light" class="white_content">This is the lightbox content. <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+  </div>
+  <div id="fade" class="black_overlay"></div>
       <a href="http://www.youtube.com/"><img data-tags="Kriss S.V." src="" width="25%" align="center"></a>
 <a href="http://www.youtube.com/"><img data-tags="Kriss S.V." src="" width="25%" align="center"></a>
 <a href="http://www.youtube.com/"><img data-tags="Kriss S.V." src="" width="25%" align="center"></a>
