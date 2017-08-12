@@ -50,6 +50,20 @@
 </div>
 </div>
 <audio autoplay loop>
+<div id="myModal" class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Welcome Message</h4>
+      </div>
+      <div class="modal-body">
+        <p>Your Message Goes here and you only get to see it once!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 <script>
 window['CboxReady'] = function (Cbox) {
 	Cbox('button', '7-830176-zLwUQc');
@@ -58,5 +72,6 @@ window['CboxReady'] = function (Cbox) {
 <script src="https://static.cbox.ws/embed/1.js" async></script>
 <source src="Gandalf.mp3" type="audio/mpeg"></audio>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.js">
+$("#myModal").modal("show");</script>
 </body>
