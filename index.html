@@ -38,6 +38,113 @@ var adfly_advert = 'int';
   background-color: white;  z-index: 1002;
   overflow: auto;
 }
+#demo {
+        margin: 30px 0 50px 0;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+    
+    #demo .wrapper {
+        display: inline-block;
+        width: 180px;
+        margin: 0 10px 0 0;
+        height: 20px;
+        position: relative;
+    }
+    
+    #demo .parent {
+        height: 100%;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        line-height: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background: #F9F9F9;
+        border: 1px solid #AAA;
+        border-bottom: 1px solid #777;
+        color: #282D31;
+        font-weight: bold;
+        z-index: 2;
+        position: relative;
+        -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
+        -webkit-transition-delay: .8s;
+        text-align: center;
+    }
+    
+    #demo .parent:hover,
+    #demo .content:hover ~ .parent {
+        background: #fff;
+        -webkit-transition-delay: 0s, 0s, 0s;
+    }
+    
+    #demo .content:hover ~ .parent {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        z-index: 0;
+    }
+    
+    #demo .content {
+        position: absolute;
+        top: 0;
+        display: block;
+        z-index: 1;
+        height: 0;
+        width: 180px;
+        padding-top: 30px;
+        -webkit-transition: height .5s ease;
+        -webkit-transition-delay: .4s;
+        border: 1px solid #777;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,.4);
+    }
+    
+    #demo .wrapper:active .content {
+        height: 123px;
+        z-index: 3;
+        -webkit-transition-delay: 0s;
+    }
+    
+    #demo .content:hover {
+        height: 123px;
+        z-index: 3;
+        -webkit-transition-delay: 0s;
+    }
+    
+    
+    #demo .content ul {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    #demo .content ul a {
+        text-decoration: none;
+    }
+    
+    #demo .content li:hover {
+        background: #eee;
+        color: #333;
+    }
+    
+    #demo .content li {
+        list-style: none;
+        text-align: left;
+        color: #888;
+        font-size: 14px;
+        line-height: 30px;
+        height: 30px;
+        padding-left: 10px;
+        border-top: 1px solid #ccc;
+    }
+    
+    #demo .content li:last-of-type {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 </style>
 </head>
 <body>
@@ -47,7 +154,7 @@ var adfly_advert = 'int';
 		<div class="white_content" id="light">
 			<h2>HOW TO GET THE CODE???<br>
 			<br>
-			STEP 1 : CHOOSE A WEAPON<br>
+			STEP 1 : CHOOSE A SET<br>
 			<br>
 			STEP 2 : SELECT A PICTURE SKIN AND CLICK<br>
 			<br>
@@ -71,157 +178,27 @@ var adfly_advert = 'int';
 
 			<div id="gallery">
 <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='block';document.getElementById('fade1').style.display='block'">
-<img align="center" data-tags="AUG A3" src="http://i.imgur.com/glW8bcg.png" width="25%"></a>
+<img align="center" data-tags="NOBLE" src="https://i.imgur.com/NXnlQvw.jpg" width="75%"></a>
 <div class="white_content" id="light1">
-<h3>ID 2ND ANNIVERSARY
+<h3>NOBLE SET
 <br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wFo3Kn');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2w0jwoq');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2w1zIoM');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2uC0X5E');">30 DAY CODE</a>(GUESS THE CODE)
+<div id="demo">
+    <div class="wrapper">
+        <div class="content">
+            <ul>
+                <a href="#"><li>Lorem ipsum dolor</li></a>
+                <a href="#"><li>Consectetur adipisicing</li></a>
+                <a href="#"><li>Reprehenderit</li></a>
+                <a href="#"><li>Commodo consequat</li></a>
+            </ul>
+        </div>
+        <div class="parent">Drop Down Parent 1</div>
+    </div>
+</div>
 <br><br>
 <a href="javascript:void(0)" onclick="document.getElementById('light1').style.display='none';document.getElementById('fade1').style.display='none'">Close</a></h3>
 </div>
 <div class="black_overlay" id="fade1"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'">
-<img align="center" data-tags="M1887" src="http://i.imgur.com/W6ENrdi.png" width="25%"></a>
-<div class="white_content" id="light2">
-<h3>ID 2ND ANNIVERSARY
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2hXWo3F');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2uUcKLZ');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wW51i3');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fDLdfL');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'">Close</a></h3></div>
-<div class="black_overlay" id="fade2"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light3').style.display='block';document.getElementById('fade3').style.display='block'">
-<img align="center" data-tags="FANGBLADE" src="http://i.imgur.com/zTRlu7Q.png" width="25%"></a>
-<div class="white_content" id="light3">
-<h3>ID 2ND ANNIVERSARY
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2vE2yJC');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fGGZ7p');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2uXyXZD');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2uJpZjw');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light3').style.display='none';document.getElementById('fade3').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade3"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light4').style.display='block';document.getElementById('fade4').style.display='block'">
-<img align="center" data-tags="P90 MC" src="http://i.imgur.com/kr4AFKy.png" width="25%"></a>
-<div class="white_content" id="light4">
-<h3>ID 2ND ANNIVERSARY
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2x3pFwA');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2x3GDv3');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fKlAdq');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2w9D1v3');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light4').style.display='none';document.getElementById('fade4').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade4"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light5').style.display='block';document.getElementById('fade5').style.display='block'"><img align="center" data-tags="KRISS S.V." src="http://i.imgur.com/Usu9Oru.png" width="25%"></a>                                <div class="white_content" id="light5">
-<h3>ID 2ND ANNIVERSARY
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wPHd04');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2w166s8');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2w1Bh6B');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2i4Focf');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light5').style.display='none';document.getElementById('fade5').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade5"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light6').style.display='block';document.getElementById('fade6').style.display='block'"><img align="center" data-tags="OA-93" src="http://i.imgur.com/qJ4yl7Q.png" width="25%"></a>                                
-<div class="white_content" id="light6">
-<h3>ID 2ND ANNIVERSARY
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2ibh5JF');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2vNb3nr');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2vLVc8u');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2iaV8KJ');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light6').style.display='none';document.getElementById('fade6').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade6"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light7').style.display='block';document.getElementById('fade7').style.display='block'"><img align="center" data-tags="P90 EXT" src="http://i.imgur.com/36xl93x.png" width="25%"></a>                                
-<div class="white_content" id="light7">
-<h3>ID 2ND ANNIVERSARY
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wiHjQJ');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wkZQeh');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wUF3fr');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wZz2y8');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light7').style.display='none';document.getElementById('fade7').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade7"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light8').style.display='block';document.getElementById('fade8').style.display='block'"><img align="center" data-tags="COMBAT MACHETE" src="http://i.imgur.com/uSTVFr5.png" width="25%"></a>                                
-<div class="white_content" id="light8">
-<h3>COMBAT MACHETE PERMANENT!!
-<br><br>CODE #1<br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2vbDbgt');">CODE PART 1</a>
-<br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fULKKM');">CODE PART 2</a>
-<br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2uSEF3V');">CODE PART 3</a>
-<br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2vNG5vh');">CODE PART 4</a>
-<br>
-<a href="javascript:void(0)" onclick="document.getElementById('light8').style.display='none';document.getElementById('fade8').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade8"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light9').style.display='block';document.getElementById('fade9').style.display='block'"><img align="center" data-tags="M1887" src="http://i.imgur.com/yr5RbCW.png" width="25%"></a>                                
-<div class="white_content" id="light9">
-<h3>FIBER
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wwzWVe');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fYOqXC');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fZcBoM');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2x5w6Aj');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light9').style.display='none';document.getElementById('fade9').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade9"></div>
-<a href="javascript:void(0)" onclick="document.getElementById('light10').style.display='block';document.getElementById('fade10').style.display='block'"><img align="center" data-tags="P90 EXT" src="http://i.imgur.com/1H8EbpK.png" width="25%"></a>                                
-<div class="white_content" id="light10">
-<h3>FIBER
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2vXh9By');">1 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2wmZeoU');">3 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2fDLdfL');">7 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="http://go.oclasrv.com/afu.php?id=1373064" onclick="window.open('http://bit.ly/2x3GDv3');">30 DAY CODE</a>(GUESS THE CODE)
-<br><br>
-<a href="javascript:void(0)" onclick="document.getElementById('light10').style.display='none';document.getElementById('fade10').style.display='none'">Close</a></h3>
-</div>
-<div class="black_overlay" id="fade10"></div>
 			</div>
 		</div>
 	</div>
